@@ -1,6 +1,4 @@
 using BlazorServerPlaywright.Data;
-using Microsoft.AspNetCore.Components;
-using Microsoft.AspNetCore.Components.Web;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -29,3 +27,8 @@ app.MapBlazorHub();
 app.MapFallbackToPage("/_Host");
 
 app.Run();
+
+public partial class Program
+{
+    // Expose the Program class for use with WebApplicationFactory<T>
+}
